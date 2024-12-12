@@ -7,7 +7,7 @@ class GeminiHelper {
         if (!apiKey) {
             throw new Error('API key is required');
         }
-        this.genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+        this.genAI = new GoogleGenerativeAI(apiKey);
     }
 
     /**
